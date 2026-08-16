@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Participant comments from the BR Painting user study.">
+  <title>Comments Table — BR Painting</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/comments.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Participant Comments</h1>
+      <p>BR Painting user study</p>
+    </div>
+    <a href="index.html">← Painting viewer</a>
+  </header>
+
+  <main class="comments-main">
+    <div class="comments-intro">
+      <p><strong>16 participants with available paintings</strong></p>
+      <label>Search <input id="comment-search" type="search" placeholder="Participant, theme, or keyword…"></label>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Participant</th>
+            <th>Site</th>
+            <th>Theme</th>
+            <th>画前</th>
+            <th>画后</th>
+            <th>Preferred</th>
+            <th>Preference reason</th>
+            <th>Final open feedback</th>
+            <th>访谈重点</th>
+          </tr>
+        </thead>
+        <tbody id="comments-body"></tbody>
+      </table>
+      <p id="no-results" hidden>No matching comments.</p>
+    </div>
+  </main>
+
+  <script src="assets/site.js"></script>
+  <script src="assets/interviews.js"></script>
+  <script src="assets/comments.js"></script>
+</body>
+</html>

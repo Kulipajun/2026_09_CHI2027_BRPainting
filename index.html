@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive supplementary material for the BR Painting study.">
+  <title>BR Painting — Supplementary Material</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>BR Painting</h1>
+      <p>Interactive supplementary material</p>
+    </div>
+    <nav>
+      <a href="comments.html">Comments table</a>
+      <a id="open-page" href="hongo2/br/index.html" target="_blank" rel="noopener">Open full page ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="painting-choice">
+        <span>Participant / Painting</span>
+        <div id="painting-list" role="group" aria-label="Choose a painting"></div>
+      </div>
+      <div class="condition" role="group" aria-label="Choose a condition">
+        <span>Condition</span>
+        <div>
+          <button class="active" data-condition="br">BR Painting</button>
+          <button data-condition="nonebr">Baseline Painting</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="condition-comments" aria-label="Comments for each painting condition">
+      <button id="before-card" class="condition-comment active" data-condition="br">
+        <span id="before-label">画前（BR条件）</span>
+        <p id="before-comment"></p>
+      </button>
+      <button id="after-card" class="condition-comment" data-condition="nonebr">
+        <span id="after-label">画后（Baseline条件）</span>
+        <p id="after-comment"></p>
+      </button>
+    </section>
+
+    <section class="feedback" aria-live="polite">
+      <div class="preference">
+        <span>Preferred condition</span>
+        <strong id="preference-value"></strong>
+        <p id="preference-reason"></p>
+      </div>
+      <div class="open-feedback">
+        <span>Final open feedback</span>
+        <p id="feedback-value"></p>
+      </div>
+    </section>
+
+    <div class="viewer">
+      <div id="loading">Loading…</div>
+      <iframe id="painting-frame" src="hongo2/br/index.html" title="Interactive painting viewer"></iframe>
+    </div>
+  </main>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
